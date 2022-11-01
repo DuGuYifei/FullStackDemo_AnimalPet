@@ -1,9 +1,0 @@
-package com.example.springbootlab.repository;
-
-import java.util.List;
-import java.util.Optional;
-
-
-public interface Repository<E, K> {
-
-}

@@ -1,0 +1,41 @@
+package com.example.springbootlab.pet.dto;
+
+import com.example.springbootlab.pet.entity.Pet;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+import java.util.function.BiFunction;
+/**
+ * Created By IDEA
+ * Author: s188026 Yifei Liu
+ * Date: 2022/10/24 11:47
+ * Description: PUT pet request.
+ */
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@ToString
+@EqualsAndHashCode
+public class UpdatePetRequest {
+
+    private String name;
+
+    private Boolean isSick;
+
+    public static BiFunction<Pet, UpdatePetRequest, Pet> dtoToEntityUpdater() {
+        return (pet, request) -> {
+            pet.setName(request.getName());
+            pet.setIs_sick(request.getIsSick());
+            return pet;
+        };
+    }
+}

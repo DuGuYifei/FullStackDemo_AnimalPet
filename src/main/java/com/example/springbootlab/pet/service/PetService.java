@@ -5,9 +5,8 @@ import com.example.springbootlab.pet.entity.Pet;
 import com.example.springbootlab.pet.repository.PetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,7 +40,7 @@ public class PetService {
      * @return container with pet
      */
     public Optional<Pet> find(Long id) {
-        return repository.find(id);
+        return repository.findById(id);
     }
 
     /**
@@ -50,23 +49,24 @@ public class PetService {
     public List<Pet> findAll() {
         return repository.findAll();
     }
+    public List<Pet> findAll(Animal animal){ return repository.findAllByAnimal(animal); }
 
     /**
      * Creates new pet.
      *
      * @param pet new pet
      */
-    public void create(Pet pet) {
-        repository.create(pet);
-    }
+    @Transactional
+    public Pet create(Pet pet) { return repository.save(pet); }
 
     /**
      * Updates existing pet.
      *
      * @param pet pet to be updated
      */
+    @Transactional
     public void update(Pet pet) {
-        repository.update(pet);
+        repository.save(pet);
     }
 
     /**
@@ -74,8 +74,6 @@ public class PetService {
      *
      * @param pet existing pet's id to be deleted
      */
-    public void delete(Long pet) {
-        repository.delete(repository.find(pet).orElseThrow());
-    }
-    
+    @Transactional
+    public void delete(Long pet) { repository.deleteById(pet); }
 }

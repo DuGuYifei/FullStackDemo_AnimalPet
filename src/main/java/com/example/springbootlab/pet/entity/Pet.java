@@ -2,6 +2,7 @@ package com.example.springbootlab.pet.entity;
 
 import lombok.*;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -18,10 +19,14 @@ import java.io.Serializable;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @ToString
 @EqualsAndHashCode
+@Entity
+@Table(name = "pets")
 public class Pet implements Serializable {
     /**
      * Unique id (primary key).
      */
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
 
     /**
@@ -32,10 +37,12 @@ public class Pet implements Serializable {
     /**
      * Whether the pet is sick.
      */
-    private Boolean isSick;
+    private Boolean is_sick;
 
     /**
      * The class of pet.
      */
+    @ManyToOne
+    @JoinColumn(name = "animal")
     private Animal animal;
 }

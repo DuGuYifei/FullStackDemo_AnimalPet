@@ -4,6 +4,7 @@ import com.example.springbootlab.pet.entity.Animal;
 import com.example.springbootlab.pet.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -36,26 +37,20 @@ public class AnimalService {
      * @return container with animal entity
      */
     public Optional<Animal> find(String name) {
-        return repository.find(name);
+        return repository.findById(name);
     }
 
     public List<Animal> findAll() {
         return repository.findAll();
     }
 
-    public void delete(String name) { repository.delete(repository.find(name).orElseThrow()); }
+    @Transactional
+    public void delete(String name) { repository.deleteById(name); }
 
-    public void update(Animal entity) {
-        repository.update(entity);
-    }
+    @Transactional
+    public void update(Animal entity) { repository.save(entity); }
 
-    /**
-     * Stores new animal in the data store.
-     *
-     * @param animal new animal to be saved
-     */
-    public void create(Animal animal) {
-        repository.create(animal);
-    }
+    @Transactional
+    public Animal create(Animal animal) { return repository.save(animal); }
 
 }

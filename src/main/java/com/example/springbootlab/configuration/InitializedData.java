@@ -5,12 +5,10 @@ import com.example.springbootlab.pet.entity.FoodType;
 import com.example.springbootlab.pet.entity.Pet;
 import com.example.springbootlab.pet.service.AnimalService;
 import com.example.springbootlab.pet.service.PetService;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.io.InputStream;
 
 /**
  * Listener started automatically on CDI application context initialized. Injects proxy to the services and fills
@@ -43,9 +41,9 @@ public class InitializedData {
     @PostConstruct
     private synchronized void init() {
 
-        Animal dog = Animal.builder().name("Dog").foodType(FoodType.omnivore).build();
-        Animal cat = Animal.builder().name("Cat").foodType(FoodType.carnivore).build();
-        Animal sheep = Animal.builder().name("Sheep").foodType(FoodType.herbivore).build();
+        Animal dog = Animal.builder().name("Dog").food_type(FoodType.omnivore).build();
+        Animal cat = Animal.builder().name("Cat").food_type(FoodType.carnivore).build();
+        Animal sheep = Animal.builder().name("Sheep").food_type(FoodType.herbivore).build();
 
         animalService.create(dog);
         animalService.create(cat);
@@ -53,35 +51,25 @@ public class InitializedData {
 
         Pet spike = Pet.builder()
                 .name("Spike")
-                .isSick(false)
+                .is_sick(false)
                 .animal(dog)
                 .build();
 
         Pet tom = Pet.builder()
                 .name("Tom")
-                .isSick(false)
+                .is_sick(false)
                 .animal(cat)
                 .build();
 
         Pet shaun = Pet.builder()
                 .name("Shaun")
-                .isSick(false)
+                .is_sick(false)
                 .animal(sheep)
                 .build();
 
         petService.create(spike);
         petService.create(tom);
         petService.create(shaun);
-    }
 
-    /**
-     * @param name name of the desired resource
-     * @return array of bytes read from the resource
-     */
-    @SneakyThrows
-    private byte[] getResourceAsByteArray(String name) {
-        try (InputStream is = this.getClass().getResourceAsStream(name)) {
-            return is.readAllBytes();
-        }
     }
 }
