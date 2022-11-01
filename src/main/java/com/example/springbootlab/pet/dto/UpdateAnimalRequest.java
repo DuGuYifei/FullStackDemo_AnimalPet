@@ -22,11 +22,11 @@ import java.util.function.BiFunction;
 @EqualsAndHashCode
 public class UpdateAnimalRequest {
 
-    private FoodType foodType;
+    private FoodType food_type;
 
     public static BiFunction<Animal, UpdateAnimalRequest, Animal> dtoToEntityUpdater(){
         return (animal, request) -> {
-            animal.setFood_type(request.getFoodType());
+            animal.setFood_type(request.getFood_type());
             return animal;
         };
     }

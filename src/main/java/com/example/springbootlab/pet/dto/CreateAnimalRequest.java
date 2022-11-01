@@ -25,12 +25,12 @@ public class CreateAnimalRequest {
 
     private String name;
 
-    private FoodType foodType;
+    private FoodType food_type;
 
     public static Function<CreateAnimalRequest, Animal> dtoToEntityMapper(){
         return request -> Animal.builder()
                 .name(request.getName())
-                .food_type(request.getFoodType())
+                .food_type(request.getFood_type())
                 .build();
     }
 }

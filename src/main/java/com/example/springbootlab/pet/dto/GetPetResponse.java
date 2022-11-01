@@ -30,7 +30,7 @@ public class GetPetResponse {
 
     private String name;
 
-    private Boolean isSick;
+    private Boolean is_sick;
 
     private String animal;
 
@@ -41,7 +41,7 @@ public class GetPetResponse {
         return pet -> GetPetResponse.builder()
                 .id(pet.getId())
                 .name(pet.getName())
-                .isSick(pet.getIs_sick())
+                .is_sick(pet.getIs_sick())
                 .animal(pet.getAnimal().getName())
                 .build();
     }

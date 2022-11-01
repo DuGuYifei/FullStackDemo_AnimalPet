@@ -36,7 +36,7 @@ public class CreatePetRequest {
     /**
      * Whether the pet is sick.
      */
-    private Boolean isSick;
+    private Boolean is_sick;
 
     /**
      * Name of the pets's animal.
@@ -50,7 +50,7 @@ public class CreatePetRequest {
     public static Function<CreatePetRequest, Pet> dtoToEntityMapper(Function<String, Animal> animalFunction){
         return request -> Pet.builder()
                 .name(request.getName())
-                .is_sick(request.getIsSick())
+                .is_sick(request.getIs_sick())
                 .animal(animalFunction.apply(request.getAnimal()))
                 .build();
     }

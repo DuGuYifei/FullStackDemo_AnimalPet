@@ -29,12 +29,12 @@ public class UpdatePetRequest {
 
     private String name;
 
-    private Boolean isSick;
+    private Boolean is_sick;
 
     public static BiFunction<Pet, UpdatePetRequest, Pet> dtoToEntityUpdater() {
         return (pet, request) -> {
             pet.setName(request.getName());
-            pet.setIs_sick(request.getIsSick());
+            pet.setIs_sick(request.getIs_sick());
             return pet;
         };
     }

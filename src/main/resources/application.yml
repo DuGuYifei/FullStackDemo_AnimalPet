@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    # url: jdbc:h2:file:E:\Gdansk University of Technology\fifth_semester\InternetiServicesArchitectures\Lab\H2Database\SpringbootLab
+    url: jdbc:h2:mem:SpringbootLab
+    username: sa
+    password:
+  jpa :
+    database: h2
+    hibernate:
+      ddl-auto: update
+  h2:
+    console :
+      path: /h2-console
+      enabled: true

@@ -33,12 +33,12 @@ public class GetAnimalResponse {
      */
     private String name;
 
-    private FoodType foodType;
+    private FoodType food_type;
 
     public static Function<Animal, GetAnimalResponse> entityToDtoMapper() {
         return animal -> GetAnimalResponse.builder()
                 .name(animal.getName())
-                .foodType(animal.getFood_type())
+                .food_type(animal.getFood_type())
                 .build();
     }
 }
