@@ -66,7 +66,7 @@ public class AnimalController {
     }
 
     @DeleteMapping("{name}")
-    public ResponseEntity<Void> deletePet(@PathVariable("name") String name) {
+    public ResponseEntity<Void> deleteAnimal(@PathVariable("name") String name) {
         Optional<Animal> animal = animalService.find(name);
         if (animal.isPresent()) {
             animalService.delete(animal.get().getName());
@@ -77,7 +77,7 @@ public class AnimalController {
     }
 
     @PutMapping("{name}")
-    public ResponseEntity<Void> updatePet(@RequestBody UpdateAnimalRequest request, @PathVariable("name") String name) {
+    public ResponseEntity<Void> updateAnimal(@RequestBody UpdateAnimalRequest request, @PathVariable("name") String name) {
         Optional<Animal> animal = animalService.find(name);
         if (animal.isPresent()) {
             UpdateAnimalRequest.dtoToEntityUpdater().apply(animal.get(), request);

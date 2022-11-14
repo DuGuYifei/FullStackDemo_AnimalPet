@@ -12,7 +12,7 @@ import java.io.Serializable;
  * Created By IDEA
  * Author: s188026 Yifei Liu
  * Date: 2022/10/10 9:36
- * Description: The class of pet.
+ * Description: The entity of Animal class.
  */
 
 @Getter
