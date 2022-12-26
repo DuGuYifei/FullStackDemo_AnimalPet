@@ -1,0 +1,115 @@
+GET http://localhost:3000/api/animals
+
+###
+
+GET http://localhost:8080/api/animals/Dog
+
+###
+
+POST http://localhost:8080/api/animals
+Content-Type: application/json
+
+{
+  "name": "Snake",
+  "food_type": "omnivore"
+}
+
+###
+
+PUT http://localhost:8080/api/animals/Snake
+Content-Type: application/json
+
+{
+  "food_type": "carnivore"
+}
+
+###
+
+GET http://localhost:8080/api/animals
+
+###
+
+DELETE http://localhost:8080/api/animals/Snake
+
+###
+
+GET http://localhost:8080/api/animals
+
+###
+
+GET http://localhost:8080/api/pets
+
+###
+
+GET http://localhost:8080/api/pets/3
+
+###
+
+POST http://localhost:8080/api/pets
+Content-Type: application/json
+
+{
+  "name": "Kitty",
+  "is_sick": false,
+  "animal": "Snake"
+}
+
+###
+
+GET http://localhost:8080/api/animals/Cat/pets
+
+###
+
+PUT http://localhost:8080/api/pets/4
+Content-Type: application/json
+
+{
+  "name": "Kitty",
+  "is_sick": true
+}
+
+###
+
+GET http://localhost:8080/api/pets/4
+
+###
+
+DELETE http://localhost:8080/api/pets/4
+
+###
+
+GET http://localhost:8080/api/animals/Cat/pets
+
+###
+
+DELETE http://localhost:8080/api/animals/Cat
+
+###
+
+GET http://localhost:8080/api/pets
+
+###
+
+GET http://localhost:8080/api/animals
+
+###
+
+GET http://localhost:8080/api/animals/Cat/pets/2
+
+###
+
+GET http://localhost:8080/api/animals/Cat/pets/2
+
+###
+
+PUT http://localhost:8080/api/animals/Cat/pets/2
+Content-Type: application/json
+
+{
+  "name": "Kitty",
+  "is_sick": true
+}
+
+###
+
+DELETE http://localhost:8080/api/animals/Cat/pets/2
