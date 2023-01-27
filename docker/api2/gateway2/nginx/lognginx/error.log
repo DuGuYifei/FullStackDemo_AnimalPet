@@ -1,0 +1,224 @@
+2023/01/22 00:25:24 [notice] 10#10: using the "epoll" event method
+2023/01/22 00:25:24 [notice] 10#10: nginx/1.23.2
+2023/01/22 00:25:24 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/22 00:25:24 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/22 00:25:24 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/22 00:25:24 [notice] 10#10: start worker processes
+2023/01/22 00:25:24 [notice] 10#10: start worker process 11
+2023/01/22 00:25:24 [notice] 10#10: start worker process 12
+2023/01/22 00:25:24 [notice] 10#10: start worker process 13
+2023/01/22 00:25:24 [notice] 10#10: start worker process 14
+2023/01/22 00:25:24 [notice] 10#10: start worker process 15
+2023/01/22 00:25:24 [notice] 10#10: start worker process 16
+2023/01/22 00:25:24 [notice] 10#10: start worker process 17
+2023/01/22 00:25:24 [notice] 10#10: start worker process 18
+2023/01/22 00:25:24 [notice] 10#10: start worker process 19
+2023/01/22 00:25:24 [notice] 10#10: start worker process 20
+2023/01/22 00:25:24 [notice] 10#10: start worker process 21
+2023/01/22 00:25:24 [notice] 10#10: start worker process 22
+2023/01/22 00:25:24 [notice] 10#10: start worker process 23
+2023/01/22 00:25:24 [notice] 10#10: start worker process 24
+2023/01/22 00:25:24 [notice] 10#10: start worker process 25
+2023/01/22 00:25:24 [notice] 10#10: start worker process 26
+2023/01/22 00:33:03 [notice] 10#10: using the "epoll" event method
+2023/01/22 00:33:03 [notice] 10#10: nginx/1.23.2
+2023/01/22 00:33:03 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/22 00:33:03 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/22 00:33:03 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/22 00:33:03 [notice] 10#10: start worker processes
+2023/01/22 00:33:03 [notice] 10#10: start worker process 11
+2023/01/22 00:33:03 [notice] 10#10: start worker process 12
+2023/01/22 00:33:03 [notice] 10#10: start worker process 13
+2023/01/22 00:33:03 [notice] 10#10: start worker process 14
+2023/01/22 00:33:03 [notice] 10#10: start worker process 15
+2023/01/22 00:33:03 [notice] 10#10: start worker process 16
+2023/01/22 00:33:03 [notice] 10#10: start worker process 17
+2023/01/22 00:33:03 [notice] 10#10: start worker process 18
+2023/01/22 00:33:03 [notice] 10#10: start worker process 19
+2023/01/22 00:33:03 [notice] 10#10: start worker process 20
+2023/01/22 00:33:03 [notice] 10#10: start worker process 21
+2023/01/22 00:33:03 [notice] 10#10: start worker process 22
+2023/01/22 00:33:03 [notice] 10#10: start worker process 23
+2023/01/22 00:33:03 [notice] 10#10: start worker process 24
+2023/01/22 00:33:03 [notice] 10#10: start worker process 25
+2023/01/22 00:33:03 [notice] 10#10: start worker process 26
+2023/01/22 00:33:05 [error] 11#11: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:05 [warn] 11#11: *1 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:05 [error] 11#11: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:05 [warn] 11#11: *1 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:10 [error] 12#12: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:10 [warn] 12#12: *4 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:10 [error] 12#12: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:10 [warn] 12#12: *4 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:17 [error] 13#13: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:17 [warn] 13#13: *7 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:17 [error] 13#13: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/22 00:33:17 [warn] 13#13: *7 upstream server temporarily disabled while connecting to upstream, client: 172.18.0.12, server: localhost, request: "GET /api/animals HTTP/1.0", upstream: "http://127.0.0.1:8080/api/animals", host: "service_server", referrer: "http://localhost:4000/"
+2023/01/23 09:25:07 [notice] 10#10: using the "epoll" event method
+2023/01/23 09:25:07 [notice] 10#10: nginx/1.23.2
+2023/01/23 09:25:07 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/23 09:25:07 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/23 09:25:07 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/23 09:25:07 [notice] 10#10: start worker processes
+2023/01/23 09:25:07 [notice] 10#10: start worker process 11
+2023/01/23 09:25:07 [notice] 10#10: start worker process 12
+2023/01/23 09:25:07 [notice] 10#10: start worker process 13
+2023/01/23 09:25:07 [notice] 10#10: start worker process 14
+2023/01/23 09:25:07 [notice] 10#10: start worker process 15
+2023/01/23 09:25:07 [notice] 10#10: start worker process 16
+2023/01/23 09:25:07 [notice] 10#10: start worker process 17
+2023/01/23 09:25:07 [notice] 10#10: start worker process 18
+2023/01/23 09:25:07 [notice] 10#10: start worker process 19
+2023/01/23 09:25:07 [notice] 10#10: start worker process 20
+2023/01/23 09:25:07 [notice] 10#10: start worker process 21
+2023/01/23 09:25:07 [notice] 10#10: start worker process 22
+2023/01/23 09:25:07 [notice] 10#10: start worker process 23
+2023/01/23 09:25:07 [notice] 10#10: start worker process 24
+2023/01/23 09:25:07 [notice] 10#10: start worker process 25
+2023/01/23 09:25:07 [notice] 10#10: start worker process 26
+2023/01/23 18:45:20 [notice] 10#10: using the "epoll" event method
+2023/01/23 18:45:20 [notice] 10#10: nginx/1.23.2
+2023/01/23 18:45:20 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/23 18:45:20 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/23 18:45:20 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/23 18:45:20 [notice] 10#10: start worker processes
+2023/01/23 18:45:20 [notice] 10#10: start worker process 11
+2023/01/23 18:45:20 [notice] 10#10: start worker process 12
+2023/01/23 18:45:20 [notice] 10#10: start worker process 13
+2023/01/23 18:45:20 [notice] 10#10: start worker process 14
+2023/01/23 18:45:20 [notice] 10#10: start worker process 15
+2023/01/23 18:45:20 [notice] 10#10: start worker process 16
+2023/01/23 18:45:20 [notice] 10#10: start worker process 17
+2023/01/23 18:45:20 [notice] 10#10: start worker process 18
+2023/01/23 18:45:20 [notice] 10#10: start worker process 19
+2023/01/23 18:45:20 [notice] 10#10: start worker process 20
+2023/01/23 18:45:20 [notice] 10#10: start worker process 21
+2023/01/23 18:45:20 [notice] 10#10: start worker process 22
+2023/01/23 18:45:20 [notice] 10#10: start worker process 23
+2023/01/23 18:45:20 [notice] 10#10: start worker process 24
+2023/01/23 18:45:20 [notice] 10#10: start worker process 25
+2023/01/23 18:45:20 [notice] 10#10: start worker process 26
+2023/01/23 18:46:30 [notice] 14#14: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 14#14: exiting
+2023/01/23 18:46:30 [notice] 17#17: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 17#17: exiting
+2023/01/23 18:46:30 [notice] 10#10: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 12#12: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 12#12: exiting
+2023/01/23 18:46:30 [notice] 16#16: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 16#16: exiting
+2023/01/23 18:46:30 [notice] 11#11: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 11#11: exiting
+2023/01/23 18:46:30 [notice] 11#11: exit
+2023/01/23 18:46:30 [notice] 20#20: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 15#15: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 18#18: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 23#23: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 25#25: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 13#13: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 19#19: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 22#22: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 21#21: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 24#24: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 26#26: signal 15 (SIGTERM) received, exiting
+2023/01/23 18:46:30 [notice] 14#14: exit
+2023/01/23 18:46:30 [notice] 17#17: exit
+2023/01/23 18:46:30 [notice] 12#12: exit
+2023/01/23 18:46:30 [notice] 16#16: exit
+2023/01/23 18:46:30 [notice] 20#20: exiting
+2023/01/23 18:46:30 [notice] 15#15: exiting
+2023/01/23 18:46:30 [notice] 15#15: exit
+2023/01/23 18:46:30 [notice] 18#18: exiting
+2023/01/23 18:46:30 [notice] 18#18: exit
+2023/01/23 18:46:30 [notice] 23#23: exiting
+2023/01/23 18:46:30 [notice] 25#25: exiting
+2023/01/23 18:46:30 [notice] 13#13: exiting
+2023/01/23 18:46:30 [notice] 19#19: exiting
+2023/01/23 18:46:30 [notice] 22#22: exiting
+2023/01/23 18:46:30 [notice] 21#21: exiting
+2023/01/23 18:46:30 [notice] 24#24: exiting
+2023/01/23 18:46:30 [notice] 24#24: exit
+2023/01/23 18:46:30 [notice] 26#26: exiting
+2023/01/23 18:46:30 [notice] 20#20: exit
+2023/01/23 18:46:30 [notice] 23#23: exit
+2023/01/23 18:46:30 [notice] 25#25: exit
+2023/01/23 18:46:30 [notice] 13#13: exit
+2023/01/23 18:46:30 [notice] 19#19: exit
+2023/01/23 18:46:30 [notice] 22#22: exit
+2023/01/23 18:46:30 [notice] 21#21: exit
+2023/01/23 18:46:30 [notice] 26#26: exit
+2023/01/23 18:46:30 [notice] 10#10: signal 14 (SIGALRM) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 11
+2023/01/23 18:46:30 [notice] 10#10: worker process 11 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: signal 29 (SIGIO) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 15
+2023/01/23 18:46:30 [notice] 10#10: worker process 15 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 17 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 18 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 20 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 23 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: signal 29 (SIGIO) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 17
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 24
+2023/01/23 18:46:30 [notice] 10#10: worker process 12 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 24 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: signal 29 (SIGIO) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 22
+2023/01/23 18:46:30 [notice] 10#10: worker process 13 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 14 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 16 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 21 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 22 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: worker process 25 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: signal 29 (SIGIO) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 25
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 26
+2023/01/23 18:46:30 [notice] 10#10: worker process 26 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: signal 29 (SIGIO) received
+2023/01/23 18:46:30 [notice] 10#10: signal 17 (SIGCHLD) received from 19
+2023/01/23 18:46:30 [notice] 10#10: worker process 19 exited with code 0
+2023/01/23 18:46:30 [notice] 10#10: exit
+2023/01/26 23:15:53 [notice] 10#10: using the "epoll" event method
+2023/01/26 23:15:53 [notice] 10#10: nginx/1.23.2
+2023/01/26 23:15:53 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/26 23:15:53 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/26 23:15:53 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/26 23:15:53 [notice] 10#10: start worker processes
+2023/01/26 23:15:53 [notice] 10#10: start worker process 11
+2023/01/26 23:15:53 [notice] 10#10: start worker process 12
+2023/01/26 23:15:53 [notice] 10#10: start worker process 13
+2023/01/26 23:15:53 [notice] 10#10: start worker process 14
+2023/01/26 23:15:53 [notice] 10#10: start worker process 15
+2023/01/26 23:15:53 [notice] 10#10: start worker process 16
+2023/01/26 23:15:53 [notice] 10#10: start worker process 17
+2023/01/26 23:15:53 [notice] 10#10: start worker process 18
+2023/01/26 23:15:53 [notice] 10#10: start worker process 19
+2023/01/26 23:15:53 [notice] 10#10: start worker process 20
+2023/01/26 23:15:53 [notice] 10#10: start worker process 21
+2023/01/26 23:15:53 [notice] 10#10: start worker process 22
+2023/01/26 23:15:53 [notice] 10#10: start worker process 23
+2023/01/26 23:15:53 [notice] 10#10: start worker process 24
+2023/01/26 23:15:53 [notice] 10#10: start worker process 25
+2023/01/26 23:15:53 [notice] 10#10: start worker process 26
+2023/01/26 23:23:28 [notice] 10#10: using the "epoll" event method
+2023/01/26 23:23:28 [notice] 10#10: nginx/1.23.2
+2023/01/26 23:23:28 [notice] 10#10: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/01/26 23:23:28 [notice] 10#10: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/01/26 23:23:28 [notice] 10#10: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/01/26 23:23:28 [notice] 10#10: start worker processes
+2023/01/26 23:23:28 [notice] 10#10: start worker process 11
+2023/01/26 23:23:28 [notice] 10#10: start worker process 12
+2023/01/26 23:23:28 [notice] 10#10: start worker process 13
+2023/01/26 23:23:28 [notice] 10#10: start worker process 14
+2023/01/26 23:23:28 [notice] 10#10: start worker process 15
+2023/01/26 23:23:28 [notice] 10#10: start worker process 16
+2023/01/26 23:23:28 [notice] 10#10: start worker process 17
+2023/01/26 23:23:28 [notice] 10#10: start worker process 18
+2023/01/26 23:23:28 [notice] 10#10: start worker process 19
+2023/01/26 23:23:28 [notice] 10#10: start worker process 20
+2023/01/26 23:23:28 [notice] 10#10: start worker process 21
+2023/01/26 23:23:28 [notice] 10#10: start worker process 22
+2023/01/26 23:23:28 [notice] 10#10: start worker process 23
+2023/01/26 23:23:28 [notice] 10#10: start worker process 24
+2023/01/26 23:23:28 [notice] 10#10: start worker process 25
+2023/01/26 23:23:28 [notice] 10#10: start worker process 26
