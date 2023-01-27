@@ -35,6 +35,16 @@ const routes = [
 		name:'PetAdd',
 		component: () => import('../views/pets/pet_add.vue')
 	},
+	{
+		path:'/file',
+		name:'FileAdd',
+		component: () => import('../views/files/file.vue')
+	},
+	{
+		path:'/file/list',
+		name:'FileList',
+		component: () => import('../views/files/file_list.vue')
+	},
 ]
 
 const router = createRouter({

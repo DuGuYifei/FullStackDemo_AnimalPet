@@ -15,6 +15,8 @@
 		</td>
 	</tr>
 	<button @click="goAdd">add</button>
+	<br>
+	<button @click="goFile">file</button>
 </template>
 
 <script>
@@ -38,6 +40,13 @@
 						query: {
 							animal: animal
 						}
+					}
+				);
+			},
+			goFile(){
+				this.$router.push(
+					{
+						path: "/file", 
 					}
 				);
 			}
