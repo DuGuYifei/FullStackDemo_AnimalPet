@@ -8,3 +8,5 @@ It contains
 3. deployment: docker, reverseproxy
 4. database: H2 -> MySQL(since lab5)
 5. Dockerfile, docker-compose.yml, nginx configuration
+
+![](structure.jpg)
